@@ -20,6 +20,9 @@ public class LandingPage {
         landingFrame.setSize(400, 280);
         landingFrame.setLocationRelativeTo(null);
 
+        Image icon = Toolkit.getDefaultToolkit().getImage(MainPage.class.getResource("/icons/favicon.png"));
+        landingFrame.setIconImage(icon);
+
         // Create components for the landing page
         JLabel welcomeLabel = new JLabel("Your favorite Fuel Tracker!");
         JLabel signInLabel = new JLabel("Create account or Log In");

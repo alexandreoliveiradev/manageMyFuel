@@ -1,6 +1,5 @@
 package utils;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import pages.LandingPage;
 
 public class Application {

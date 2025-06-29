@@ -121,6 +121,15 @@ public class JSON {
         try {
             // Read JSON from a file
             Path filePath = Path.of("src/main/resources/data/users.txt");
+
+            if (Files.notExists(filePath)) {
+                Files.createDirectories(filePath.getParent());
+                Files.createFile(filePath);
+                // optionally write an empty or default content
+                Files.writeString(filePath, "");
+            }
+
+
             String json = Files.readString(filePath);
             String decodedJson = Decripter.decodeB64(json);
 
