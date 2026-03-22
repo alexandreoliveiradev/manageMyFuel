@@ -96,7 +96,7 @@ public class Car {
         } else if (price == 0.0f) {
             price = liters*literPrice;
         } else if (literPrice == 0.0f){
-            literPrice = liters/price;
+            literPrice = price/liters;
         }
         Fuel newFuel = new Fuel(fuelDate, price, literPrice, totalKms, liters, brandName);
         fuels.add(newFuel);

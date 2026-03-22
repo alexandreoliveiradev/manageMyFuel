@@ -50,12 +50,15 @@ public class Stats {
 
     public static float getYearMinPrice(String username, String carName, boolean filtered){
         float output = 100.0f;
-        float min = 0.0f;
+        float min;
         for (int i = 0; i < 12; i++){
             min = getMonthMinPrice(username, carName, filtered, Formatter.getCurrentMonth() - i);
             if ( min < output && min != 0.0f) {
                 output = min;
             }
+        }
+        if (output == 100.0f) {
+            output = 0.0f;
         }
         return Math.min(output, 100.0f);
     }

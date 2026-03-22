@@ -156,10 +156,6 @@ public class AddFuelPage {
                 addButton.doClick();
             });
 
-            brandComboBox.addActionListener(e -> {
-                addButton.doClick();
-            });
-
 
             // Add the JScrollPane to the frame
             FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER);

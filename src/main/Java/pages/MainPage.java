@@ -108,13 +108,13 @@ public class MainPage {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
-
-        Date today = new Date();
-        if (Setup.getNextInspectionByCar(userName, car_name).compareTo(today) <= 0) {
-            Messenger.Popup(landingFrame, "Don't forget to take your " + car_name + " to inspection.\n" +
-                    "You can click on the car (top right) \nto update your revision date.", "I");
+        if (!Objects.equals(Setup.getUserDefaultCar(userName), "Error")) {
+            Date today = new Date();
+            if (Setup.getNextInspectionByCar(userName, car_name).compareTo(today) <= 0) {
+                Messenger.Popup(landingFrame, "Don't forget to take your " + car_name + " to inspection.\n" +
+                        "You can click on the car (top right) \nto update your revision date.", "I");
+            }
         }
-
 
     }
 

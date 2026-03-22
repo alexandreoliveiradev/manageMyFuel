@@ -32,10 +32,10 @@ public class Fuel {
 
     public Fuel(Date fuelDate, float price, float literPrice, int totalKms, float liters, String brandName) {
         this.fuelDate = fuelDate;
-        this.price = price;
-        this.literPrice = literPrice;
+        this.price = (float) (Math.round(price * 100.0) / 100.0);
+        this.literPrice = (float) (Math.round(literPrice * 1000.0) / 1000.0);
         this.totalKms = totalKms;
-        this.liters = liters;
+        this.liters = (float) (Math.round(liters * 10.0) / 10.0);;
         brand_name = brandName;
         this.id = getNextId();
     }
