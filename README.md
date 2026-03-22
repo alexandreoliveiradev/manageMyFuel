@@ -4,28 +4,40 @@ It has a few features like Stats, History, managing fuels for multiple cars, get
 You can view the stats and history for your current car or all of them.
 
 It's a small project for fun and curiosity only, any recommendations or bugs found, please tell me.
-
+#
 
 Login screen
-![src/main/resources/readme/login.png](src/main/resources/readme/login.png)
+
+<img src="src/main/resources/readme/login.png" width="300" height="300">
+
 
 Add Fuel
-![src/main/resources/readme/newFuel.png](src/main/resources/readme/newFuel.png)
+
+<img src="src/main/resources/readme/newFuel.png" width="300" height="300">
+
 
 Check Stats
-![src/main/resources/readme/stats.png](src/main/resources/readme/stats.png)
+
+<img src="src/main/resources/readme/stats.png" width="300" height="300">
+
 
 Check Fuel History
-![src/main/resources/readme/fuels.png](src/main/resources/readme/fuels.png)
+
+<img src="src/main/resources/readme/fuels.png" width="300" height="300">
+
 
 User Settings
-![src/main/resources/readme/userSettings.png](src/main/resources/readme/userSettings.png)
+
+<img src="src/main/resources/readme/userSettings.png" width="300" height="300">
+
 
 Inspection warning
-![src/main/resources/readme/inspection.png](src/main/resources/readme/inspection.png)
+
+<img src="src/main/resources/readme/inspection.png" width="300" height="300">
 
 
+#
 You can use the repository to build the app, or you can use the exe built by Launch4J.
-File is located on /app. 
+File is located on /app.
 
 Cheers, Alex
